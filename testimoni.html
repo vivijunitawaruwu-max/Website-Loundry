@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Testimoni | LaundryKu</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+
+    body{
+      background:#f4f7fc;
+      font-family:'Segoe UI',sans-serif;
+      overflow-x:hidden;
+    }
+
+    /* NAVBAR */
+    .navbar{
+      backdrop-filter:blur(10px);
+    }
+
+    /* HERO */
+    .hero{
+      min-height:65vh;
+      background:
+      linear-gradient(rgba(13,110,253,.85),rgba(13,110,253,.85)),
+      url('https://images.unsplash.com/photo-1521656693074-0ef32e80a5d5?q=80&w=1600');
+
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      text-align:center;
+      color:white;
+    }
+
+    .hero h1{
+      font-weight:800;
+    }
+
+    /* SECTION TITLE */
+    .section-title{
+      font-weight:800;
+      color:#0d6efd;
+    }
+
+    /* TESTIMONI CARD */
+    .testimonial-card{
+      border:none;
+      border-radius:30px;
+      overflow:hidden;
+      transition:.4s;
+      background:white;
+      position:relative;
+    }
+
+    .testimonial-card:hover{
+      transform:translateY(-12px);
+      box-shadow:0 20px 40px rgba(0,0,0,.15);
+    }
+
+    /* PROFILE */
+    .profile-img{
+      width:90px;
+      height:90px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #0d6efd;
+    }
+
+    /* ICON */
+    .quote-icon{
+      position:absolute;
+      top:25px;
+      right:25px;
+      font-size:55px;
+      color:rgba(13,110,253,.1);
+    }
+
+    /* STAR */
+    .stars{
+      color:#ffc107;
+      font-size:20px;
+    }
+
+    /* STATS */
+    .stats-card{
+      border:none;
+      border-radius:25px;
+      background:white;
+      transition:.3s;
+    }
+
+    .stats-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 15px 35px rgba(0,0,0,.12);
+    }
+
+    .stats-icon{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#0d6efd,#4da3ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:auto;
+      color:white;
+      font-size:35px;
+      box-shadow:0 10px 30px rgba(13,110,253,.3);
+    }
+
+    /* CTA */
+    .cta{
+      background:linear-gradient(to right,#0d6efd,#4da3ff);
+      border-radius:35px;
+      color:white;
+    }
+
+    footer{
+      background:#0d6efd;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+
+  <div class="container">
+
+    <a class="navbar-brand fw-bold fs-3" href="beranda.html">
+      <i class="bi bi-droplet-half"></i> LaundryKu
+    </a>
+
+    <button class="navbar-toggler"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="beranda.html">Beranda</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="katalog.html">Katalog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">Kontak</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" href="testimoni.html">
+            Testimoni
+          </a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-light px-4" href="login.html">
+            Login
+          </a>
+        </li>
+
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-warning px-4" href="register.html">
+            Register
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="container">
+
+    <h1 class="display-3">
+      Testimoni Pelanggan
+    </h1>
+
+    <p class="lead mt-4">
+
+      Kepuasan pelanggan adalah prioritas utama LaundryKu.
+      Berikut pengalaman terbaik dari pelanggan kami.
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- STATS -->
+<section class="py-5">
+
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- STAT 1 -->
+      <div class="col-lg-3 col-md-6">
+
+        <div class="card stats-card shadow h-100">
+
+          <div class="card-body text-center p-4">
+
+            <div class="stats-icon mb-4">
+              <i class="bi bi-emoji-smile-fill"></i>
+            </div>
+
+            <h2 class="fw-bold text-primary">
+              98%
+            </h2>
+
+            <p class="text-muted">
+              Pelanggan Puas
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- STAT 2 -->
+      <div class="col-lg-3 col-md-6">
+
+        <div class="card stats-card shadow h-100">
+
+          <div class="card-body text-center p-4">
+
+            <div class="stats-icon mb-4">
+              <i class="bi bi-star-fill"></i>
+            </div>
+
+            <h2 class="fw-bold text-primary">
+              4.9
+            </h2>
+
+            <p class="text-muted">
+              Rating Pelayanan
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- STAT 3 -->
+      <div class="col-lg-3 col-md-6">
+
+        <div class="card stats-card shadow h-100">
+
+          <div class="card-body text-center p-4">
+
+            <div class="stats-icon mb-4">
+              <i class="bi bi-bag-check-fill"></i>
+            </div>
+
+            <h2 class="fw-bold text-primary">
+              12K+
+            </h2>
+
+            <p class="text-muted">
+              Laundry Selesai
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- STAT 4 -->
+      <div class="col-lg-3 col-md-6">
+
+        <div class="card stats-card shadow h-100">
+
+          <div class="card-body text-center p-4">
+
+            <div class="stats-icon mb-4">
+              <i class="bi bi-clock-history"></i>
+            </div>
+
+            <h2 class="fw-bold text-primary">
+              24H
+            </h2>
+
+            <p class="text-muted">
+              Express Service
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONI -->
+<section class="py-5 bg-white">
+
+  <div class="container">
+
+    <div class="text-center mb-5">
+
+      <h2 class="section-title">
+        Apa Kata Mereka?
+      </h2>
+
+      <p class="text-muted">
+        Pengalaman nyata pelanggan LaundryKu
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+      <!-- TESTI 1 -->
+      <div class="col-lg-4">
+
+        <div class="card testimonial-card shadow h-100">
+
+          <i class="bi bi-quote quote-icon"></i>
+
+          <div class="card-body p-5 text-center">
+
+            <img src="https://randomuser.me/api/portraits/men/32.jpg"
+            class="profile-img mb-4">
+
+            <h4 class="fw-bold">
+              Andi Saputra
+            </h4>
+
+            <p class="text-muted">
+              Mahasiswa
+            </p>
+
+            <div class="stars mb-4">
+
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+
+            </div>
+
+            <p class="text-muted fs-5">
+
+              “LaundryKu sangat membantu saya sebagai mahasiswa.
+              Pakaian selalu bersih, harum dan selesai tepat waktu.”
+
+            </p>
+
+            <div class="mt-4">
+
+              <span class="badge bg-primary px-3 py-2">
+                Respon Cepat
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- TESTI 2 -->
+      <div class="col-lg-4">
+
+        <div class="card testimonial-card shadow h-100">
+
+          <i class="bi bi-quote quote-icon"></i>
+
+          <div class="card-body p-5 text-center">
+
+            <img src="https://randomuser.me/api/portraits/women/44.jpg"
+            class="profile-img mb-4">
+
+            <h4 class="fw-bold">
+              Siti Rahma
+            </h4>
+
+            <p class="text-muted">
+              Karyawan Swasta
+            </p>
+
+            <div class="stars mb-4">
+
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+
+            </div>
+
+            <p class="text-muted fs-5">
+
+              “Pelayanan sangat profesional dan hasil setrikanya
+              rapi banget. Sangat recommended!”
+
+            </p>
+
+            <div class="mt-4">
+
+              <span class="badge bg-success px-3 py-2">
+                Premium Quality
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- TESTI 3 -->
+      <div class="col-lg-4">
+
+        <div class="card testimonial-card shadow h-100">
+
+          <i class="bi bi-quote quote-icon"></i>
+
+          <div class="card-body p-5 text-center">
+
+            <img src="https://randomuser.me/api/portraits/men/51.jpg"
+            class="profile-img mb-4">
+
+            <h4 class="fw-bold">
+              Budi Santoso
+            </h4>
+
+            <p class="text-muted">
+              Pebisnis
+            </p>
+
+            <div class="stars mb-4">
+
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+
+            </div>
+
+            <p class="text-muted fs-5">
+
+              “Layanan antar jemputnya sangat memudahkan.
+              Hemat waktu dan hasil laundry sangat memuaskan.”
+
+            </p>
+
+            <div class="mt-4">
+
+              <span class="badge bg-warning text-dark px-3 py-2">
+                Favorite Service
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- HASIL TERUKUR -->
+<section class="py-5">
+
+  <div class="container">
+
+    <div class="text-center mb-5">
+
+      <h2 class="section-title">
+        Hasil yang Terukur
+      </h2>
+
+      <p class="text-muted">
+        Bukti kualitas pelayanan LaundryKu
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+      <!-- ITEM -->
+      <div class="col-lg-4">
+
+        <div class="card stats-card shadow h-100">
+
+          <div class="card-body text-center p-5">
+
+            <div class="stats-icon mb-4">
+              <i class="bi bi-speedometer2"></i>
+            </div>
+
+            <h3 class="fw-bold">
+              2x Lebih Cepat
+            </h3>
+
+            <p class="text-muted mt-3">
+
+              Proses laundry modern membuat pengerjaan
+              lebih cepat dibanding laundry biasa.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM -->
+      <div class="col-lg-4">
+
+        <div class="card stats-card shadow h-100">
+
+          <div class="card-body text-center p-5">
+
+            <div class="stats-icon mb-4">
+              <i class="bi bi-flower1"></i>
+            </div>
+
+            <h3 class="fw-bold">
+              Wangi Tahan Lama
+            </h3>
+
+            <p class="text-muted mt-3">
+
+              Menggunakan pewangi premium
+              dengan aroma segar dan tahan lama.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM -->
+      <div class="col-lg-4">
+
+        <div class="card stats-card shadow h-100">
+
+          <div class="card-body text-center p-5">
+
+            <div class="stats-icon mb-4">
+              <i class="bi bi-shield-check"></i>
+            </div>
+
+            <h3 class="fw-bold">
+              Higienis & Aman
+            </h3>
+
+            <p class="text-muted mt-3">
+
+              Pakaian dicuci menggunakan
+              teknologi modern dan higienis.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="py-5">
+
+  <div class="container">
+
+    <div class="cta p-5 text-center shadow-lg">
+
+      <h2 class="fw-bold">
+        Jadilah Pelanggan Berikutnya
+      </h2>
+
+      <p class="mt-3 fs-5">
+
+        Rasakan sendiri pengalaman laundry modern,
+        cepat dan profesional bersama LaundryKu.
+
+      </p>
+
+      <a href="katalog.html"
+      class="btn btn-warning btn-lg px-5 mt-3 rounded-pill">
+
+        Gunakan Sekarang
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-4">
+
+  <div class="container">
+
+    <h5 class="fw-bold">
+      LaundryKu
+    </h5>
+
+    <p class="mb-0">
+      © 2026 LaundryKu - Modern Laundry Service
+    </p>
+
+  </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

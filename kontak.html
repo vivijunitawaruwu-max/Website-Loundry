@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kontak | LaundryKu</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+
+    body{
+      background:#f4f7fc;
+      font-family:'Segoe UI',sans-serif;
+      overflow-x:hidden;
+    }
+
+    /* NAVBAR */
+    .navbar{
+      backdrop-filter:blur(10px);
+    }
+
+    /* HERO */
+    .hero{
+      min-height:60vh;
+      background:
+      linear-gradient(rgba(13,110,253,.85),rgba(13,110,253,.85)),
+      url('https://images.unsplash.com/photo-1521656693074-0ef32e80a5d5?q=80&w=1600');
+
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      color:white;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-weight:800;
+    }
+
+    /* SECTION TITLE */
+    .section-title{
+      color:#0d6efd;
+      font-weight:800;
+    }
+
+    /* CARD */
+    .modern-card{
+      border:none;
+      border-radius:25px;
+      transition:.4s;
+      overflow:hidden;
+      background:white;
+    }
+
+    .modern-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 20px 40px rgba(0,0,0,.15);
+    }
+
+    /* ICON */
+    .icon-box{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#0d6efd,#4da3ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:auto;
+      color:white;
+      font-size:35px;
+      box-shadow:0 10px 30px rgba(13,110,253,.3);
+    }
+
+    /* FORM */
+    .contact-form{
+      border:none;
+      border-radius:30px;
+      overflow:hidden;
+    }
+
+    .form-control{
+      border-radius:15px;
+      padding:14px;
+    }
+
+    textarea{
+      resize:none;
+    }
+
+    /* SOCIAL */
+    .social-btn{
+      width:55px;
+      height:55px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#0d6efd;
+      color:white;
+      font-size:22px;
+      transition:.3s;
+      text-decoration:none;
+    }
+
+    .social-btn:hover{
+      background:#084298;
+      transform:translateY(-5px);
+      color:white;
+    }
+
+    /* FAQ */
+    .accordion-button{
+      font-weight:600;
+    }
+
+    iframe{
+      border-radius:25px;
+    }
+
+    footer{
+      background:#0d6efd;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+
+  <div class="container">
+
+    <a class="navbar-brand fw-bold fs-3" href="beranda.html">
+      <i class="bi bi-droplet-half"></i> LaundryKu
+    </a>
+
+    <button class="navbar-toggler"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="beranda.html">Beranda</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="katalog.html">Katalog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" href="kontak.html">
+            Kontak
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="testimoni.html">Testimoni</a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-light px-4" href="login.html">
+            Login
+          </a>
+        </li>
+
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-warning px-4" href="register.html">
+            Register
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="container">
+
+    <h1 class="display-3">
+      Hubungi LaundryKu
+    </h1>
+
+    <p class="lead mt-4">
+
+      Kami siap membantu kebutuhan laundry Anda
+      dengan pelayanan cepat dan profesional.
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- CONTACT INFO -->
+<section class="py-5">
+
+  <div class="container">
+
+    <div class="text-center mb-5">
+
+      <h2 class="section-title">
+        Informasi Kontak
+      </h2>
+
+      <p class="text-muted">
+        Hubungi kami melalui informasi berikut
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+      <!-- EMAIL -->
+      <div class="col-lg-3 col-md-6">
+
+        <div class="card modern-card shadow h-100">
+
+          <div class="card-body text-center p-4">
+
+            <div class="icon-box mb-4">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+
+            <h5 class="fw-bold">
+              Email
+            </h5>
+
+            <p class="text-muted mt-3">
+              support@laundryku.com
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PHONE -->
+      <div class="col-lg-3 col-md-6">
+
+        <div class="card modern-card shadow h-100">
+
+          <div class="card-body text-center p-4">
+
+            <div class="icon-box mb-4">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+
+            <h5 class="fw-bold">
+              Telephone
+            </h5>
+
+            <p class="text-muted mt-3">
+              +62 812 3456 7890
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="col-lg-3 col-md-6">
+
+        <div class="card modern-card shadow h-100">
+
+          <div class="card-body text-center p-4">
+
+            <div class="icon-box mb-4">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+
+            <h5 class="fw-bold">
+              Alamat
+            </h5>
+
+            <p class="text-muted mt-3">
+              Jl. Sudirman No. 25, Pekanbaru
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RESPONSE -->
+      <div class="col-lg-3 col-md-6">
+
+        <div class="card modern-card shadow h-100">
+
+          <div class="card-body text-center p-4">
+
+            <div class="icon-box mb-4">
+              <i class="bi bi-clock-history"></i>
+            </div>
+
+            <h5 class="fw-bold">
+              Respon
+            </h5>
+
+            <p class="text-muted mt-3">
+              ± 5 - 10 Menit
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT FORM -->
+<section class="py-5 bg-white">
+
+  <div class="container">
+
+    <div class="row g-5 align-items-center">
+
+      <!-- FORM -->
+      <div class="col-lg-6">
+
+        <div class="card contact-form shadow-lg">
+
+          <div class="card-body p-5">
+
+            <h2 class="section-title mb-4">
+              Formulir Kontak
+            </h2>
+
+            <form>
+
+              <div class="mb-4">
+
+                <label class="form-label fw-semibold">
+                  Nama Lengkap
+                </label>
+
+                <input type="text"
+                class="form-control"
+                placeholder="Masukkan nama Anda">
+
+              </div>
+
+              <div class="mb-4">
+
+                <label class="form-label fw-semibold">
+                  Email
+                </label>
+
+                <input type="email"
+                class="form-control"
+                placeholder="Masukkan email Anda">
+
+              </div>
+
+              <div class="mb-4">
+
+                <label class="form-label fw-semibold">
+                  Pesan
+                </label>
+
+                <textarea rows="5"
+                class="form-control"
+                placeholder="Tulis pesan Anda"></textarea>
+
+              </div>
+
+              <button class="btn btn-primary btn-lg w-100 rounded-pill">
+
+                <i class="bi bi-send-fill"></i>
+                Kirim Pesan
+
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="col-lg-6">
+
+        <h2 class="section-title mb-4">
+          Media Sosial
+        </h2>
+
+        <p class="text-muted fs-5">
+
+          Ikuti media sosial LaundryKu untuk mendapatkan
+          promo menarik dan update terbaru.
+
+        </p>
+
+        <div class="d-flex gap-3 mt-4 mb-5">
+
+          <a href="#" class="social-btn">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="#" class="social-btn">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="#" class="social-btn">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+
+          <a href="#" class="social-btn">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+
+        </div>
+
+        <!-- MAP -->
+        <h2 class="section-title mb-4">
+          Lokasi Kami
+        </h2>
+
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127559.12967996398!2d101.343105!3d0.507067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aea8d0bfffff%3A0x3039d80b220c0d0!2sPekanbaru!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid"
+        width="100%"
+        height="320"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FAQ -->
+<section class="py-5">
+
+  <div class="container">
+
+    <div class="text-center mb-5">
+
+      <h2 class="section-title">
+        FAQ
+      </h2>
+
+      <p class="text-muted">
+        Pertanyaan yang sering ditanyakan
+      </p>
+
+    </div>
+
+    <div class="accordion shadow rounded-4 overflow-hidden"
+    id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+
+        <h2 class="accordion-header">
+
+          <button class="accordion-button"
+          data-bs-toggle="collapse"
+          data-bs-target="#faq1">
+
+            Berapa lama proses laundry?
+
+          </button>
+
+        </h2>
+
+        <div id="faq1"
+        class="accordion-collapse collapse show"
+        data-bs-parent="#faqAccordion">
+
+          <div class="accordion-body">
+
+            Proses laundry normal sekitar 1-2 hari,
+            sedangkan express hanya beberapa jam.
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+
+        <h2 class="accordion-header">
+
+          <button class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#faq2">
+
+            Apakah tersedia layanan antar jemput?
+
+          </button>
+
+        </h2>
+
+        <div id="faq2"
+        class="accordion-collapse collapse"
+        data-bs-parent="#faqAccordion">
+
+          <div class="accordion-body">
+
+            Ya, kami menyediakan layanan pickup
+            dan delivery untuk area tertentu.
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+
+        <h2 class="accordion-header">
+
+          <button class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#faq3">
+
+            Bagaimana cara menghubungi customer service?
+
+          </button>
+
+        </h2>
+
+        <div id="faq3"
+        class="accordion-collapse collapse"
+        data-bs-parent="#faqAccordion">
+
+          <div class="accordion-body">
+
+            Anda dapat menghubungi kami melalui
+            WhatsApp, email atau media sosial resmi LaundryKu.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="py-5">
+
+  <div class="container">
+
+    <div class="bg-primary text-white rounded-5 p-5 text-center shadow-lg">
+
+      <h2 class="fw-bold">
+        Siap Menggunakan LaundryKu?
+      </h2>
+
+      <p class="mt-3 fs-5">
+
+        Hubungi kami sekarang dan nikmati layanan
+        laundry modern terbaik untuk Anda.
+
+      </p>
+
+      <a href="katalog.html"
+      class="btn btn-warning btn-lg px-5 mt-3 rounded-pill">
+
+        Lihat Layanan
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-4">
+
+  <div class="container">
+
+    <h5 class="fw-bold">
+      LaundryKu
+    </h5>
+
+    <p class="mb-0">
+      © 2026 LaundryKu - Modern Laundry Service
+    </p>
+
+  </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
